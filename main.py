@@ -34,4 +34,4 @@ async def inline_postbot(query: types.InlineQuery):
 async def start_handler(message: types.Message):
 		await message.answer("Добро пожаловать! Напишите @flag_capital_bot и страну в поле для ввода текста. \nПример:\n@flag_capital_bot Россия")
 if __name__ == '__main__':
-	executor.start_polling(dp)
+    executor.start_polling(dp)
