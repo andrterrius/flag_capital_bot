@@ -32,6 +32,6 @@ async def inline_postbot(query: types.InlineQuery):
     	return await query.answer(articles, cache_time=1)#Если страна не нашлась в базе, отправляем ответ "Страна не найдена"
 @dp.message_handler(commands=['start'])
 async def start_handler(message: types.Message):
-		await message.answer("Добро пожаловать! Напишите @flag_capital_bot и страну в поле для ввода текста. \nПример:\n@flag_capital_bot Россия")
+    await message.answer("Добро пожаловать! Напишите @flag_capital_bot и страну в поле для ввода текста. \nПример:\n@flag_capital_bot Россия")
 if __name__ == '__main__':
     executor.start_polling(dp)
